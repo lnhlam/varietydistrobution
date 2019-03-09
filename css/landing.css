@@ -1,6 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	margin:0;
+	font-family: "program", sans-serif;
+	text-decoration: none;
+	background-color: #66b887;}
+h3{
+	font-family: "program", sans-serif;
+	font-size: 15pt;
+	font-weight: bold;
+	font-kerning: auto;
+}
+h1{
+	font-family: "program", sans-serif;
+	font-size: 35pt;
+	font-weight: bold;
+	font-kerning: auto;
+	color: #1aaa98;
+	
+}
+p{
+	font-family: "program", sans-serif;
+	font-size: 10pt;
+	font-kerning: auto;
+}
+
+
 #background{
 	z-index:0;
 	position: fixed;
@@ -14,6 +40,7 @@
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	width: 50vw;
-	height: 50vw;
+	min-width: 400px;
+	width: 40%;
+	height: auto;
 }
