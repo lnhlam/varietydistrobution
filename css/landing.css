@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
+@font-face {
+	font-family: 'Gobold';
+	src: url('font/Gobold-Extra2.otf') format('otf'),
+		 url('font/Gobold-Extra2-Italic.otf') format('otf');
+	/* You can include additional font properties here, such as font-weight or font-style */
+  }
+
 
 body {
 	margin:0;
@@ -7,18 +14,16 @@ body {
 	text-decoration: none;
 	background-color: #66b887;}
 h3{
-	font-family: "program", sans-serif;
+	font-family: "Gobold", sans-serif;
 	font-size: 15pt;
 	font-weight: bold;
 	font-kerning: auto;
 }
 h1{
-	font-family: "program", sans-serif;
+	font-family: 'Gobold', sans-serif;
 	font-size: 35pt;
 	font-weight: bold;
-	font-kerning: auto;
-	color: #1aaa98;
-	
+	font-kerning: auto;	
 }
 p{
 	font-family: "program", sans-serif;
@@ -28,11 +33,12 @@ p{
 
 
 #background{
-	z-index:0;
+	z-index:-1;
 	position: fixed;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	text-align: center;
 }
 #characters{
 	z-index:1;
@@ -43,4 +49,14 @@ p{
 	min-width: 400px;
 	width: 40%;
 	height: auto;
+}
+.centered-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	color: white; /* Adjust text color as needed */
+	font-size: 60px; /* Adjust font size as needed */
+	font-weight: bold; /* Adjust font weight as needed */
+	text-decoration: none;
 }
